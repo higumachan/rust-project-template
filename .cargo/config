@@ -1,0 +1,21 @@
+[alias]     # command aliases
+b = "build --workspace"
+c = "check"
+t = "test --workspace"
+fx = "fix --workspace --allow-dirty"
+r = "run"
+rr = "run --release"
+space_example = ["run", "--release", "--", "\"command list\""]
+
+
+[build]
+rustflags = ["-D", "unused_must_use"]
+
+
+[net]
+git-fetch-with-cli = true
+
+[target.i686-pc-windows-gnu]
+linker = "i686-w64-mingw32-gcc"
+[target.x86_64-pc-windows-gnu]
+linker = "x86_64-w64-mingw32-gcc"

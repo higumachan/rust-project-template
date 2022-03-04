@@ -1,0 +1,18 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+edition = "2021"
+author = "{{authors}}"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dev-dependencies]
+rstest = "0.12"
+criterion = "0.3"
+
+[workspace]
+members = [
+    # "./packages/some-package"
+]
